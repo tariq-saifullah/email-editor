@@ -1,0 +1,38 @@
+<div class="container">
+  <div id="bar">
+    <h1>Angular Email Editor (Demo)</h1>
+  </div>
+
+  <email-editor (loaded)="editorLoaded($event)"
+    #editor></email-editor>
+</div>
+
+
+<ng-template class="modal-body" #imageGalleryModal>
+  <p>Choose an image</p>
+  <div class="images">
+    <div class="image">
+      <img src="https://picsum.photos/id/1/800" (click)="onSelectImage('https://picsum.photos/id/1/800')"/>
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/id/10/800" (click)="onSelectImage('https://picsum.photos/id/10/800')" />
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/id/20/800" (click)="onSelectImage('https://picsum.photos/id/20/800')" />
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/id/30/800" (click)="onSelectImage('https://picsum.photos/id/30/800')" />
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/id/40/800" (click)="onSelectImage('https://picsum.photos/id/40/800')" />
+    </div>
+
+    <div class="image">
+      <img src="https://picsum.photos/id/50/800" (click)="onSelectImage('https://picsum.photos/id/50/800')" />
+    </div>
+  </div>
+</ng-template>

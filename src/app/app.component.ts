@@ -13,6 +13,15 @@ export class AppComponent implements OnInit {
   @ViewChild('imageGalleryModal') imageGalleryModal: any;
 
   selectedImage: string = '';
+  options: any = {
+    appearance: {
+      panels: {
+        tools: {
+          dock: 'left'
+        }
+      }
+    }
+  }
 
 
   constructor(public dialog: MatDialog) { }

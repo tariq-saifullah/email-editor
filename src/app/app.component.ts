@@ -35,9 +35,12 @@ export class AppComponent implements OnInit {
       });
 
       dialogRef.afterClosed().subscribe(result => {
-        done({ url: this.selectedImage });
+        if(this.selectedImage) {
+          done({ url: this.selectedImage });
+        }
       });
     });
+
   }
 
   onSelectImage(url: string) {
@@ -45,4 +48,10 @@ export class AppComponent implements OnInit {
     this.selectedImage = url;
     this.dialog.closeAll();
   }
+
+  exportHtml() {
+    this.emailEditor?.editor.exportHtml((data: any) => console.log('exportHtml', data.html));
+  }
+
+
 }

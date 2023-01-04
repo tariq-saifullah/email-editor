@@ -1,6 +1,12 @@
 <div class="container">
   <div id="bar">
-    <h1>Angular Email Editor (Demo)</h1>
+    <div class="brand-name">
+      Marketing Campaign Editor
+    </div>
+
+    <div class="topbar-actions" (click)="exportHtml()">
+      <button mat-raised-button>Export HTML</button>
+    </div>
   </div>
 
   <email-editor [options]="options" (loaded)="editorLoaded($event)"

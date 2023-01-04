@@ -1,11 +1,31 @@
-img {
-    width: 40%;
-    height: 80%;
+#bar {
+    background-color: #0000001a;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .brand-name {
+        font-size: 1.8rem;
+    }
 }
 
 .images {
-    overflow-y: scroll;
-    height: 500px;
+    overflow-y: auto;
+    height: 36rem;
+    width: 53rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .image {
+        margin-top: 1.5rem;
+        cursor: pointer;
+        img {
+            width: 16rem;
+            height: 16rem;
+            border-radius: 0.5rem;
+        }
+    }
 }
 
 ::ng-deep.unlayer-editor {

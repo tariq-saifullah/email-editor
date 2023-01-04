@@ -10,6 +10,7 @@ import { EmailEditorModule } from 'angular-email-editor';
 // material imports here...
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     EmailEditorModule,
 
     MatSlideToggleModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
   ],
   exports: [
     MatDialogModule
